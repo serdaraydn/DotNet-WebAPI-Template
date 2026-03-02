@@ -1,8 +1,14 @@
-﻿using EFCore.Models;
-using EFCore.Repostories.Config;
+﻿using Entities.Models;
 using Microsoft.EntityFrameworkCore;
+using Repositories.EntityFC.Config;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection.Emit;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace EFCore.Repostories
+namespace Repositories.EntityFC
 {
     public class RepositoryContext : DbContext
     {
@@ -14,7 +20,7 @@ namespace EFCore.Repostories
 
         override protected void OnModelCreating(ModelBuilder modelBuilder)
         {
-            
+
             modelBuilder.ApplyConfiguration(new BoookConfig());
         }
     }

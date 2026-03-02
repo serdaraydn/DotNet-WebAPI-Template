@@ -1,10 +1,10 @@
-﻿using EFCore.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Entities.Models;
 
-namespace EFCore.Repostories.Config
+namespace Repositories.EntityFC.Config
 {
-    public class BoookConfig : IEntityTypeConfiguration<Models.Book>
+    public class BoookConfig : IEntityTypeConfiguration<Book>
     {
         public void Configure(EntityTypeBuilder<Book> builder)
         {

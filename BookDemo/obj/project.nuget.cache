@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zXa2Ps13PQ8=",
+  "dgSpecHash": "6s2DAaP7zB8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\DESKTOP\\Desktop\\.Net\\WebAPI\\BookDemo\\BookDemo.csproj",
+  "projectFilePath": "C:\\Users\\DESKTOP\\Desktop\\WebAPI\\BookDemo\\BookDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DESKTOP\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
     "C:\\Users\\DESKTOP\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.3.0\\microsoft.aspnetcore.authentication.core.2.3.0.nupkg.sha512",
