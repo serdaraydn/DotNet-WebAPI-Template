@@ -88,6 +88,22 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "WebAPI/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Swashbuckle.AspNetCore": "6.6.2"
+        },
+        "compile": {
+          "bin/placeholder/WebAPI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebAPI.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -439,11 +455,17 @@
         "swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "WebAPI/1.0.0": {
+      "type": "project",
+      "path": "../WebAPI/WebAPI.csproj",
+      "msbuildProject": "../WebAPI/WebAPI.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Swashbuckle.AspNetCore >= 6.6.2"
+      "Swashbuckle.AspNetCore >= 6.6.2",
+      "WebAPI >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -477,7 +499,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\DESKTOP\\Desktop\\WebAPI\\WebAPI\\WebAPI.csproj": {
+              "projectPath": "C:\\Users\\DESKTOP\\Desktop\\WebAPI\\WebAPI\\WebAPI.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

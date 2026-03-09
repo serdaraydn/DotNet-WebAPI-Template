@@ -302,3 +302,7 @@ C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\Entities.dll
 C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\Entities.pdb
 C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\Repositories.dll
 C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\Repositories.pdb
+C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\Services.dll
+C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\Services.pdb
+C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\Presentation.dll
+C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\Presentation.pdb

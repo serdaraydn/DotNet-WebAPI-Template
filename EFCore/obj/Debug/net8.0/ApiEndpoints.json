@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "EFCore.Controllers.BooksController",
+    "ContainingType": "Presentation.Controllers.BooksController",
     "Method": "GetBooks",
     "RelativePath": "api/Books",
     "HttpMethod": "GET",
@@ -10,7 +10,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EFCore.Controllers.BooksController",
+    "ContainingType": "Presentation.Controllers.BooksController",
     "Method": "CreateBook",
     "RelativePath": "api/Books",
     "HttpMethod": "POST",
@@ -26,7 +26,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EFCore.Controllers.BooksController",
+    "ContainingType": "Presentation.Controllers.BooksController",
     "Method": "GetBook",
     "RelativePath": "api/Books/{id}",
     "HttpMethod": "GET",
@@ -42,7 +42,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EFCore.Controllers.BooksController",
+    "ContainingType": "Presentation.Controllers.BooksController",
     "Method": "UpdateBook",
     "RelativePath": "api/Books/{id}",
     "HttpMethod": "PUT",
@@ -55,7 +55,7 @@
         "IsRequired": true
       },
       {
-        "Name": "updatedBook",
+        "Name": "Book",
         "Type": "Entities.Models.Book",
         "IsRequired": true
       }
@@ -63,7 +63,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EFCore.Controllers.BooksController",
+    "ContainingType": "Presentation.Controllers.BooksController",
     "Method": "DeleteBook",
     "RelativePath": "api/Books/{id}",
     "HttpMethod": "DELETE",
@@ -79,7 +79,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EFCore.Controllers.BooksController",
+    "ContainingType": "Presentation.Controllers.BooksController",
     "Method": "PatchBook",
     "RelativePath": "api/Books/{id}",
     "HttpMethod": "PATCH",

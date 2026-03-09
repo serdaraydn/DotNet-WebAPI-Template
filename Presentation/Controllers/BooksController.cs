@@ -1,25 +1,33 @@
 ﻿using Entities.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Repositories.EntityFC;
+using Services.Contracts;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace EFCore.Controllers
+namespace Presentation.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class BooksController : ControllerBase
     {
-        private readonly RepositoryContext _context;
-        public BooksController(RepositoryContext context)
+        private readonly IServiceManager _manager;
+
+        public BooksController(IServiceManager manager)
         {
-            _context = context;
+            _manager = manager;
         }
+
         [HttpGet]
         public IActionResult GetBooks()
         {
 
             try
             {
-                var books = _context.Books.ToList();
+                var books = _manager.BookServices.GetAllBooks(false);
                 return Ok(books);
             }
             catch (Exception ex)
@@ -35,7 +43,7 @@ namespace EFCore.Controllers
 
             try
             {
-                var book = _context.Books.Find(id);
+                var book = _manager.BookServices.GetBookById(id, false);
                 if (book == null)
                 {
                     return NotFound();
@@ -54,8 +62,11 @@ namespace EFCore.Controllers
         {
             try
             {
-                _context.Books.Add(book);
-                _context.SaveChanges();
+                if (book == null)
+                {
+                    return BadRequest("Book data is null.");
+                }
+                _manager.BookServices.CreateOneBook(book);
                 return CreatedAtAction(nameof(GetBook), new { id = book.Id }, book);
             }
             catch (Exception ex)
@@ -66,18 +77,17 @@ namespace EFCore.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateBook([FromRoute] int id, [FromBody] Book updatedBook)
+        public IActionResult UpdateBook([FromRoute] int id, [FromBody] Book Book)
         {
             try
             {
-                var book = _context.Books.Find(id);
-                if (book == null)
+
+                if (Book == null)
                 {
-                    return NotFound();
+                    return BadRequest("Book data is null.");
                 }
-                book.Title = updatedBook.Title;
-                book.Price = updatedBook.Price;
-                _context.SaveChanges();
+
+                _manager.BookServices.UpdateOneBook(id, Book, true);
                 return NoContent();
             }
             catch (Exception ex)
@@ -91,13 +101,8 @@ namespace EFCore.Controllers
         {
             try
             {
-                var book = _context.Books.Find(id);
-                if (book == null)
-                {
-                    return NotFound();
-                }
-                _context.Books.Remove(book);
-                _context.SaveChanges();
+                _manager.BookServices.DeleteOneBook(id, true);
+
                 return NoContent();
             }
             catch (Exception ex)
@@ -112,7 +117,8 @@ namespace EFCore.Controllers
         {
             try
             {
-                var book = _context.Books.Find(id);
+                var book = _manager.BookServices.GetBookById(id, true);
+
                 if (book == null)
                 {
                     return NotFound();
@@ -122,7 +128,7 @@ namespace EFCore.Controllers
                 {
                     return BadRequest(ModelState);
                 }
-                _context.SaveChanges();
+                _manager.BookServices.UpdateOneBook(id, book, true);
                 return NoContent();
             }
             catch (Exception ex)
@@ -130,5 +136,6 @@ namespace EFCore.Controllers
                 // Log the exception (not implemented here)
                 return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while processing your request.");
             }
-        }    }
+        }
+    }
 }
