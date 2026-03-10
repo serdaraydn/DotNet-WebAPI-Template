@@ -22,5 +22,10 @@ namespace EFCore.Extensions
         {
             services.AddScoped<IServiceManager, ServicesManager>();
         }
+
+        public static void ConfigureLoggerService(this IServiceCollection services)
+        {
+            services.AddSingleton<ILoggerService, LoggerManager>();
+        }
     }
-}
+}   

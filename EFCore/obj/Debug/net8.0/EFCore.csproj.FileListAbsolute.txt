@@ -306,3 +306,6 @@ C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\Services.dll
 C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\Services.pdb
 C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\Presentation.dll
 C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\Presentation.pdb
+C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\nlog.config
+C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\NLog.dll
+C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\NLog.Extensions.Logging.dll
