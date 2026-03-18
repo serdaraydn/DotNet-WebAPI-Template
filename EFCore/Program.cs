@@ -14,7 +14,12 @@ namespace EFCore
 
             LogManager.Setup().LoadConfigurationFromFile("nlog.config");
 
-            builder.Services.AddControllers()
+            builder.Services.AddControllers(config =>
+              { config.RespectBrowserAcceptHeader = true;
+                config.ReturnHttpNotAcceptable = true;
+              }
+            )
+                .AddXmlDataContractSerializerFormatters() 
                 .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly)
                 .AddNewtonsoftJson();
 
@@ -26,6 +31,7 @@ namespace EFCore
             builder.Services.ConfigureRepositoryManager();
             builder.Services.ConfigureServicesManager();
             builder.Services.ConfigureLoggerService();
+            builder.Services.AddAutoMapper(typeof(Program));
 
             var app = builder.Build();
             var logger = app.Services.GetRequiredService<ILoggerService>();

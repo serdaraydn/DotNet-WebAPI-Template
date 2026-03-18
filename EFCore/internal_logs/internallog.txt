@@ -32,3 +32,30 @@
 2026-03-10 19:28:28.8052 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\nlog.config
 2026-03-10 19:30:23.3193 Info AppDomain Shutting down. LogFactory closing...
 2026-03-10 19:30:23.3444 Info LogFactory has been disposed.
+2026-03-11 18:51:25.4338 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-03-11 18:51:25.6737 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.1.5033. Product version: 6.1.1+0e83056311dfcda0493d7db60b7191d0927eb5da. GlobalAssemblyCache: False
+2026-03-11 18:51:25.7268 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\nlog.config
+2026-03-11 19:04:24.2296 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-03-11 19:04:24.2913 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.1.5033. Product version: 6.1.1+0e83056311dfcda0493d7db60b7191d0927eb5da. GlobalAssemblyCache: False
+2026-03-11 19:04:24.6464 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\nlog.config
+2026-03-12 15:39:25.6462 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-03-12 15:39:25.7943 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.1.5033. Product version: 6.1.1+0e83056311dfcda0493d7db60b7191d0927eb5da. GlobalAssemblyCache: False
+2026-03-12 15:39:25.8868 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\nlog.config
+2026-03-17 15:31:20.3921 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-03-17 15:31:20.4430 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.1.5033. Product version: 6.1.1+0e83056311dfcda0493d7db60b7191d0927eb5da. GlobalAssemblyCache: False
+2026-03-17 15:31:20.5131 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\nlog.config
+2026-03-17 15:34:58.2109 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-03-17 15:34:58.2480 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.1.5033. Product version: 6.1.1+0e83056311dfcda0493d7db60b7191d0927eb5da. GlobalAssemblyCache: False
+2026-03-17 15:34:58.2731 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\nlog.config
+2026-03-17 15:38:58.8647 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-03-17 15:38:58.8839 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.1.5033. Product version: 6.1.1+0e83056311dfcda0493d7db60b7191d0927eb5da. GlobalAssemblyCache: False
+2026-03-17 15:38:58.9082 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\nlog.config
+2026-03-17 15:53:19.6755 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-03-17 15:53:19.7046 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.1.5033. Product version: 6.1.1+0e83056311dfcda0493d7db60b7191d0927eb5da. GlobalAssemblyCache: False
+2026-03-17 15:53:19.7428 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\nlog.config
+2026-03-17 15:55:21.4536 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-03-17 15:55:21.4698 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.1.5033. Product version: 6.1.1+0e83056311dfcda0493d7db60b7191d0927eb5da. GlobalAssemblyCache: False
+2026-03-17 15:55:21.4988 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\nlog.config
+2026-03-17 16:00:09.8362 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-03-17 16:00:09.8585 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.1.5033. Product version: 6.1.1+0e83056311dfcda0493d7db60b7191d0927eb5da. GlobalAssemblyCache: False
+2026-03-17 16:00:09.8849 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\nlog.config

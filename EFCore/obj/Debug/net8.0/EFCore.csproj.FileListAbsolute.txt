@@ -309,3 +309,5 @@ C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\Presentation.pdb
 C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\nlog.config
 C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\NLog.dll
 C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\NLog.Extensions.Logging.dll
+C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\DESKTOP\Desktop\WebAPI\EFCore\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
